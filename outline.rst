@@ -9,6 +9,9 @@
     - deferred cancellation
     - Agent
     - react
+    - these have all been added in the last few years and are all better in
+      basically every case (or are at least more flexible) than the previous
+      solutions
 
   - but you still have to subclass things to define your own protocol
 
@@ -28,6 +31,45 @@
         sender. you can define a receiver to do whatever.
       - but what about netstrings2?
 
-    - so stack things!
+    - netstrings2 example
 
-      - netstring
+      - this has to keep track of state
+      - so make a basic receiver that does the state tracking and calls a
+        method
+      - but how do you get something *else* receiving the method call
+
+    - stack things!
+
+      - stacking is a simple convenience layer on top of composition
+      - it's totally not necessary, but then you don't have to write ``lambda
+        x: f(g(x))``
+
+    - okay, but what about parsing something more complicated?
+    - case study: SOCKS5
+
+      - (I'm a little unsure about including SOCKS5 just because it's not
+        something that users would extend, though it is something someone would
+        write code to do)
+      - SOCKS5 isn't that complicated; there's a couple of branch points but
+        nothing too bad.
+      - a lot of it can be done in the grammar
+
+    - so, what about something *even more* complicated?
+    - case study: irc
+
+      - irc is fundamentally simple: incoming messages are all the same shape
+      - however, there's lots of layers you can put on top of it
+
+    - so, what are the layers that can be stacked here
+
+      - simplest possible: dispatching based on the name of the incoming
+        command
+      - except you probably want something that'll do the signin dance for you
+      - and something that responds to PING
+      - and something that does CTCP dispatch
+      - etc.
+
+    - stacking saves the day again
+
+      - you can define your own behvaior (without subclassing!) and then mix in
+        the additional wanted behavior
