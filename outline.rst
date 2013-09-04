@@ -71,5 +71,5 @@
 
     - stacking saves the day again
 
-      - you can define your own behvaior (without subclassing!) and then mix in
+      - you can define your own behavior (without subclassing!) and then mix in
         the additional wanted behavior
