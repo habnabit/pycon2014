@@ -66,6 +66,8 @@
         command
       - except you probably want something that'll do the signin dance for you
       - and something that responds to PING
+      - and something that makes a nicer interface than having to deal with
+        overriding ``irc_PART``.
       - and something that does CTCP dispatch
       - etc.
 
@@ -73,3 +75,16 @@
 
       - you can define your own behavior (without subclassing!) and then mix in
         the additional wanted behavior
+
+    - okay, but what about sharing state betwen levels?
+
+      - easiest method: don't. sometimes you can get away with this. not really
+        a general-case solution though
+      - make the bottom-most thing keep track of state
+
+        - the bottom-most thing needs to exist anyway, to catch all of the
+          nice-interface events that nothing else does
+        - give it a ``state`` attribute
+        - since everything is proxied downward anyway, everything can do
+          ``self.state.nickname`` easily
+        - the state can even be handed off to the sender
