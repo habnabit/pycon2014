@@ -1,4 +1,4 @@
 %.html: %.rst
 	rst2html.py < $< > $@
 
-all: outline.html
+all: description.html
