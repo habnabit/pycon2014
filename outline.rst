@@ -76,6 +76,17 @@
       - you can define your own behavior (without subclassing!) and then mix in
         the additional wanted behavior
 
+    - just how bad is subclassing, anyway? since that's in the talk title and
+      all.
+
+      - say you want to add a layer that modifies some method calls between
+        stacked layers
+      - with subclassing, it's impossible without making a *different* method
+        name and using that instead.
+      - additionally, the subclassing model conflates incoming event methods
+        and outgoing message methods
+      - ``msg`` and ``privmsg``--which one is which?
+
     - okay, but what about sharing state betwen levels?
 
       - easiest method: don't. sometimes you can get away with this. not really
