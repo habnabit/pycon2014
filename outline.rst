@@ -53,9 +53,6 @@
   - okay, but what about parsing something more complicated?
   - case study: SOCKS5
 
-    - (I'm a little unsure about including SOCKS5 just because it's not
-      something that users would extend, though it is something someone would
-      write code to do)
     - SOCKS5 isn't that complicated; there's a couple of branch points but
       nothing too bad.
     - a lot of it can be done in the grammar
