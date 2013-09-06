@@ -1,5 +1,5 @@
 ===============================================================
-Postmodern Twisted: Stream Protocol Parsing Without Subclassing
+Postmodern Twisted: Stream protocol parsing without subclassing
 ===============================================================
 
 
