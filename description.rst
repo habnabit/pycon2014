@@ -29,7 +29,7 @@ Detailed Abstract
 Twisted is a perpetually evolving library; new idioms for common tasks
 frequently emerge. However, almost every interface for extending existing
 protocols requires subclassing--even newer protocol implementations like AMP.
-Parsley's new stream protoocl parsing support strives to make writing
+Parsley's new stream protocol parsing support strives to make writing
 implementations of new stream protocols trivial as well as not requiring
 extension of these new implementations to involve subclassing.
 
