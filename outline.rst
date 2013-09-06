@@ -20,6 +20,12 @@
   - enter parsley.makeProtocol
 
     - you give it a sender and a receiver and it's like magic
+    - shoutout to introom
+
+      - introom helped tremendously by working on porting a number of protocols
+        in twisted to using parsley, and is responsible for making this a
+        really great interface instead of just a kind of okay one
+
     - netstrings demonstration
 
       - defining a thing to parse netstrings is super easy.
