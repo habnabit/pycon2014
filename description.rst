@@ -3,16 +3,6 @@ Postmodern Twisted: Stream protocol parsing without subclassing
 ===============================================================
 
 
-Description
-===========
-
-Parsing stream protocols, especially in an asynchronous context, can get quite
-tedious: handling things like framing and buffering results in a lot of
-boilerplate for each new protocol. Parsley, a parser generator, now has Twisted
-integration which makes writing stream protocol parsers simple and exposing
-extensible interfaces (for e.g. libraries) even simpler.
-
-
 Objectives
 ==========
 
@@ -23,15 +13,25 @@ also come away knowing how to make an extensible interface that doesn't require
 subclassing from the library's user.
 
 
+Description
+===========
+
+Parsing stream protocols, especially in an asynchronous context, can get quite
+tedious: handling things like framing and buffering results in a lot of
+boilerplate for each new protocol. Parsley, a parser generator, now has Twisted
+integration which makes writing stream protocol parsers simple and exposing
+extensible interfaces (for e.g. libraries) even simpler.
+
+
 Detailed Abstract
 =================
 
 Twisted is a perpetually evolving library; new idioms for common tasks
 frequently emerge. However, almost every interface for extending existing
 protocols requires subclassing--even newer protocol implementations like AMP.
-Parsley, a parser generator, now has Twisted integration which strives to make
-writing implementations of stream protocols trivial as well as not requiring
-extension of these new implementations to involve subclassing.
+Parsley now has Twisted integration which strives to make writing
+implementations of stream protocols trivial as well as not requiring extension
+of these new implementations to involve subclassing.
 
 This talk will give an overview of the basics of parsing a stream protocol
 using Parsley and how to expose an extensible interface on top. As examples of
