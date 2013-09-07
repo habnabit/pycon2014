@@ -9,8 +9,8 @@ Objectives
 The most basic objective of the talk is to show the attendees that it doesn't
 have to be so hard to parse stream protocols. It's unlikely that 30 or 45
 minutes would be enough to explain the topic in sufficient detail to everyone,
-though an attentive and excited attendee could likely come away with this
-knowledge.
+though an attentive and excited attendee could likely come away with a pretty
+good understanding of the topic.
 
 Ideally, attendees will come away understanding the basics of how to parse a
 stream protocol using Parsley and how to build either an application- or
