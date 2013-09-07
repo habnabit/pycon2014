@@ -12,6 +12,12 @@ interface on top. In the case of library-level interfaces, attendees should
 also come away knowing how to make an extensible interface that doesn't require
 subclassing from the library's user.
 
+Note of course that this is very idealised--an attentive and excited attendee
+could likely come away with this knowledge, but it's unlikely that 30 or 45
+minutes would be enough to explain the topic in sufficient detail to everyone.
+The true objective of the talk is to show the attendees that it doesn't have to
+be so hard to parse stream protocols.
+
 
 Description
 ===========
