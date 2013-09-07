@@ -7,11 +7,9 @@ Objectives
 ==========
 
 Most importantly, show attendees how they can benefit from using Parsley's
-Twisted integration to easily parse stream protocols. Introduce attendees to
-Parsley's Twisted integration and show how it simplifies the creation and
-extension of stream protocol implementations. Give attendees an idea of how to
-use Parsley to create stream protocol implementations with Twisted by walking
-through working Twisted protocols for netstrings, SOCKS5, and IRC.
+Twisted integration to easily parse stream protocols. Give attendees an idea of
+how to use Parsley to create stream protocol implementations with Twisted by
+walking through working Twisted protocols for netstrings, SOCKS5, and IRC.
 
 
 Description
