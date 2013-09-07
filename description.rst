@@ -29,8 +29,8 @@ Twisted is a perpetually evolving library; new idioms for common tasks
 frequently emerge. However, almost every interface for extending existing
 protocols requires subclassing--even newer protocol implementations like AMP.
 Parsley's new Twisted integration makes writing implementations of stream
-protocols trivial. Additional tools in Parsley simplify extension of these
-implementations using composition (instead of requiring inheritance!).
+protocols trivial and additional tools in Parsley simplify extension of these
+implementations via composition instead of requiring inheritance.
 
 This talk will give an overview of the basics of parsing a stream protocol
 using Parsley and how to expose an extensible interface on top. As examples of
