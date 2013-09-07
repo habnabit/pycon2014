@@ -6,17 +6,12 @@ Postmodern Twisted: Stream protocol parsing without subclassing
 Objectives
 ==========
 
-The most basic objective of the talk is to show the attendees that it doesn't
-have to be so hard to parse stream protocols. It's unlikely that 30 or 45
-minutes would be enough to explain the topic in sufficient detail to everyone,
-though an attentive and excited attendee could likely come away with a pretty
-good understanding of the topic.
-
-Ideally, attendees will come away understanding the basics of how to parse a
-stream protocol using Parsley and how to build either an application- or
-library-level interface on top. In the case of library-level interfaces,
-attendees will ideally also come away knowing how to make an extensible
-interface that doesn't require subclassing from the library's user.
+Most importantly, show attendees how they can benefit from using Parsley's
+Twisted integration to easily parse stream protocols. Introduce attendees to
+Parsley's Twisted integration and show how it simplifies the creation and
+extension of stream protocol implementations. Give attendees an idea of how to
+use Parsley to create stream protocol implementations with Twisted by walking
+through working Twisted protocols for netstrings, SOCKS5, and IRC.
 
 
 Description
