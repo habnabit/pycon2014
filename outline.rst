@@ -1,21 +1,28 @@
-- postmodern twisted: stream protocol parsing without subclassing
+- postmodern networking: stream protocol parsing without subclassing
 
-    - yes, there is such a thing as modern twisted
+    - yes, there is such a thing as modern networking
 
-        - endpoints
+        - tulip
 
-            - HostnameEndpoint!
+            - all new; similar to twisted
 
-        - deferred cancellation
-        - Agent
-        - react
-        - these have all been added in the last few years and are all better in
-          basically every case (or are at least more flexible) than the
-          previous solutions
+        - twisted
+
+            - endpoints
+
+                - HostnameEndpoint!
+
+            - deferred cancellation
+            - Agent
+            - react
+            - these have all been added in the last few years and are all better in
+              basically every case (or are at least more flexible) than the
+              previous solutions
 
     - but you still have to subclass things to define your own protocol
 
         - even AMP requires subclassing
+        - even *tulip* requires subclassing
 
     - enter parsley.makeProtocol
 

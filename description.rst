@@ -1,15 +1,15 @@
-===============================================================
-Postmodern Twisted: Stream protocol parsing without subclassing
-===============================================================
+==================================================================
+Postmodern Networking: Stream protocol parsing without subclassing
+==================================================================
 
 
 Objectives
 ==========
 
-Most importantly, show attendees how they can benefit from using Parsley's
-Twisted integration to easily parse stream protocols. Give attendees an idea of
-how to use Parsley to create stream protocol implementations with Twisted by
-walking through working Twisted protocols for netstrings, SOCKS5, and IRC.
+Most importantly, show attendees how they can benefit from using Parsley to
+easily parse stream protocols. Give attendees an idea of how to use Parsley to
+create stream protocol implementations with Twisted or tulip by walking through
+working Twisted protocols for netstrings, SOCKS5, and IRC.
 
 
 Description
@@ -18,8 +18,8 @@ Description
 Parsing stream protocols, especially in an asynchronous context, can get quite
 tedious: handling things like framing and buffering results in a lot of
 boilerplate for each new protocol. Parsley, a parser generator, now has Twisted
-integration which makes writing stream protocol parsers simple and exposing
-extensible interfaces (for e.g. libraries) even simpler.
+(and soon, tulip) integration which makes writing stream protocol parsers
+simple and exposing extensible interfaces (for e.g. libraries) even simpler.
 
 
 Detailed Abstract
@@ -48,7 +48,7 @@ Additional Notes
 ================
 
 If accepted, it would probably be good to not put this talk alongside other
-Twisted or networking talks!
+networking or parsing talks!
 
 
 Additional Requirements
